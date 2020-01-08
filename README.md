@@ -21,8 +21,8 @@
 > hudi 官方入口
 
 + ApacheCN 提供中文版本: <http://hudi.apachecn.org>
-+ 官方中文版: <http://hudi.apache.org/cn/index.html>
 + 官方英文版: <http://hudi.apache.org>
++ 官方中文版: <http://hudi.apache.org/cn/index.html>
 
 ## 贡献指南
 
