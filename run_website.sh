@@ -11,8 +11,11 @@ gitbook build ./ _book
 # python3 src/script.py "home" "index"
 
 # 稳定版本越新，放到最前面 (0.5.0 是最新最稳定的版本，0.6.0 是正在更新的版本，就可以放到 0.5.0 后面)
-# versions=("0.5.0" "0.4.0" "0.6.0")
-versions=("0.5.0")
+# versions=("0.5.0" "0.4.0" "master" "0.6.0")
+versions=("0.5.0" "master")
+# 获取最新版本 ${versions[0]} 生存master
+mkdir docs/master
+cp -r docs/${versions[0]}/* docs/master
 
 # for循环遍历
 for version in ${versions[*]}
@@ -43,10 +46,6 @@ do
     echo "gitbook build docs/${version} _book/docs/${version}"
     gitbook build docs/${version} _book/docs/${version}
 done
-
-# 获取最新版本 ${versions[0]} 生存master
-mkdir _book/docs/master
-cp -r _book/docs/${versions[0]}/* _book/docs/master
 
 # rm -rf /opt/apache-tomcat-9.0.17/webapps/test_book
 # cp -r _book /opt/apache-tomcat-9.0.17/webapps/test_book
