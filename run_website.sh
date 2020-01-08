@@ -11,8 +11,8 @@ gitbook build ./ _book
 # python3 src/script.py "home" "index"
 
 # 稳定版本越新，放到最前面 (0.5.0 是最新最稳定的版本，0.6.0 是正在更新的版本，就可以放到 0.5.0 后面)
-# versions=('0.5.0' '0.6.0')
-versions=('0.5.0')
+# versions=("0.5.0" "0.4.0" "0.6.0")
+versions=("0.5.0")
 
 # for循环遍历
 for version in ${versions[*]}
