@@ -48,5 +48,5 @@ done
 mkdir _book/docs/master
 cp -r _book/docs/${versions[0]}/* _book/docs/master
 
-rm -rf /opt/apache-tomcat-9.0.17/webapps/test_book
-cp -r _book /opt/apache-tomcat-9.0.17/webapps/test_book
+# rm -rf /opt/apache-tomcat-9.0.17/webapps/test_book
+# cp -r _book /opt/apache-tomcat-9.0.17/webapps/test_book
