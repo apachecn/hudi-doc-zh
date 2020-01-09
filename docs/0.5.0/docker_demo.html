@@ -1,0 +1,1479 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Docker 示例 · Hudi 中文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ApacheCN">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="comparison.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"apachecn","repo":"hudi-doc-zh","type":"star","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Hudi 0.5.0 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    安装指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="use_cases.html">
+            
+                <a href="use_cases.html">
+            
+                    
+                    使用案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="powered_by.html">
+            
+                <a href="powered_by.html">
+            
+                    
+                    演讲 & Hudi 用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="comparison.html">
+            
+                <a href="comparison.html">
+            
+                    
+                    对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="docker_demo.html">
+            
+                <a href="docker_demo.html">
+            
+                    
+                    Docker 示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="concepts.html">
+            
+                <a href="concepts.html">
+            
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="writing_data.html">
+            
+                <a href="writing_data.html">
+            
+                    
+                    写入数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="querying_data.html">
+            
+                <a href="querying_data.html">
+            
+                    
+                    查询数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="configurations.html">
+            
+                <a href="configurations.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="admin_guide.html">
+            
+                <a href="admin_guide.html">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Docker 示例</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="a-demo-using-docker-containers">A Demo using docker containers</h2>
+<p>Lets use a real world example to see how hudi works end to end. For this purpose, a self contained
+data infrastructure is brought up in a local docker cluster within your computer.</p>
+<p>The steps have been tested on a Mac laptop</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>Docker Setup :  For Mac, Please follow the steps as defined in [<a href="https://docs.docker.com/v17.12/docker-for-mac/install/" target="_blank">https://docs.docker.com/v17.12/docker-for-mac/install/</a>]. For running Spark-SQL queries, please ensure atleast 6 GB and 4 CPUs are allocated to Docker (See Docker -&gt; Preferences -&gt; Advanced). Otherwise, spark-SQL queries could be killed because of memory issues.</li>
+<li>kafkacat : A command-line utility to publish/consume from kafka topics. Use <code>brew install kafkacat</code> to install kafkacat</li>
+<li>/etc/hosts : The demo references many services running in container by the hostname. Add the following settings to /etc/hosts</li>
+</ul>
+<pre><code class="lang-Java">   <span class="hljs-number">127.0</span>.0.1 adhoc-<span class="hljs-number">1</span>
+   <span class="hljs-number">127.0</span>.0.1 adhoc-<span class="hljs-number">2</span>
+   <span class="hljs-number">127.0</span>.0.1 namenode
+   <span class="hljs-number">127.0</span>.0.1 datanode1
+   <span class="hljs-number">127.0</span>.0.1 hiveserver
+   <span class="hljs-number">127.0</span>.0.1 hivemetastore
+   <span class="hljs-number">127.0</span>.0.1 kafkabroker
+   <span class="hljs-number">127.0</span>.0.1 sparkmaster
+   <span class="hljs-number">127.0</span>.0.1 zookeeper
+</code></pre>
+<p>Also, this has not been tested on some environments like Docker on Windows.</p>
+<h3 id="setting-up-docker-cluster">Setting up Docker Cluster</h3>
+<h4 id="build-hudi">Build Hudi</h4>
+<p>The first step is to build hudi</p>
+<pre><code class="lang-Java">cd &lt;HUDI_WORKSPACE&gt;
+mvn <span class="hljs-keyword">package</span> -DskipTests
+</code></pre>
+<h4 id="bringing-up-demo-cluster">Bringing up Demo Cluster</h4>
+<p>The next step is to run the docker compose script and setup configs for bringing up the cluster.
+This should pull the docker images from docker hub and setup docker cluster.</p>
+<pre><code class="lang-Java">cd docker
+./setup_demo.sh
+....
+....
+....
+Stopping spark-worker-<span class="hljs-number">1</span>            ... done
+Stopping hiveserver                ... done
+Stopping hivemetastore             ... done
+Stopping historyserver             ... done
+.......
+......
+Creating network <span class="hljs-string">&quot;hudi_demo&quot;</span> with the <span class="hljs-keyword">default</span> driver
+Creating hive-metastore-postgresql ... done
+Creating namenode                  ... done
+Creating zookeeper                 ... done
+Creating kafkabroker               ... done
+Creating hivemetastore             ... done
+Creating historyserver             ... done
+Creating hiveserver                ... done
+Creating datanode1                 ... done
+Creating sparkmaster               ... done
+Creating adhoc-<span class="hljs-number">1</span>                   ... done
+Creating adhoc-<span class="hljs-number">2</span>                   ... done
+Creating spark-worker-<span class="hljs-number">1</span>            ... done
+Copying spark <span class="hljs-keyword">default</span> config and setting up configs
+Copying spark <span class="hljs-keyword">default</span> config and setting up configs
+Copying spark <span class="hljs-keyword">default</span> config and setting up configs
+varadarb-C02SG7Q3G8WP:docker varadarb$ docker ps
+</code></pre>
+<p>At this point, the docker cluster will be up and running. The demo cluster brings up the following services</p>
+<ul>
+<li>HDFS Services (NameNode, DataNode)</li>
+<li>Spark Master and Worker</li>
+<li>Hive Services (Metastore, HiveServer2 along with PostgresDB)</li>
+<li>Kafka Broker and a Zookeeper Node (Kakfa will be used as upstream source for the demo)</li>
+<li>Adhoc containers to run Hudi/Hive CLI commands</li>
+</ul>
+<h3 id="demo">Demo</h3>
+<p>Stock Tracker data will be used to showcase both different Hudi Views and the effects of Compaction.</p>
+<p>Take a look at the directory <code>docker/demo/data</code>. There are 2 batches of stock data - each at 1 minute granularity.
+The first batch contains stocker tracker data for some stock symbols during the first hour of trading window
+(9:30 a.m to 10:30 a.m). The second batch contains tracker data for next 30 mins (10:30 - 11 a.m). Hudi will
+be used to ingest these batches to a dataset which will contain the latest stock tracker data at hour level granularity.
+The batches are windowed intentionally so that the second batch contains updates to some of the rows in the first batch.</p>
+<h4 id="step-1--publish-the-first-batch-to-kafka">Step 1 : Publish the first batch to Kafka</h4>
+<p>Upload the first batch to Kafka topic &apos;stock ticks&apos;</p>
+<pre><code class="lang-Java">cat docker/demo/data/batch_1.json | kafkacat -b kafkabroker -t stock_ticks -P
+
+To check <span class="hljs-keyword">if</span> the <span class="hljs-keyword">new</span> topic shows up, use
+kafkacat -b kafkabroker -L -J | jq .
+{
+  <span class="hljs-string">&quot;originating_broker&quot;</span>: {
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1001</span>,
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;kafkabroker:9092/1001&quot;</span>
+  },
+  <span class="hljs-string">&quot;query&quot;</span>: {
+    <span class="hljs-string">&quot;topic&quot;</span>: <span class="hljs-string">&quot;*&quot;</span>
+  },
+  <span class="hljs-string">&quot;brokers&quot;</span>: [
+    {
+      <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1001</span>,
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;kafkabroker:9092&quot;</span>
+    }
+  ],
+  <span class="hljs-string">&quot;topics&quot;</span>: [
+    {
+      <span class="hljs-string">&quot;topic&quot;</span>: <span class="hljs-string">&quot;stock_ticks&quot;</span>,
+      <span class="hljs-string">&quot;partitions&quot;</span>: [
+        {
+          <span class="hljs-string">&quot;partition&quot;</span>: <span class="hljs-number">0</span>,
+          <span class="hljs-string">&quot;leader&quot;</span>: <span class="hljs-number">1001</span>,
+          <span class="hljs-string">&quot;replicas&quot;</span>: [
+            {
+              <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1001</span>
+            }
+          ],
+          <span class="hljs-string">&quot;isrs&quot;</span>: [
+            {
+              <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">1001</span>
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<h4 id="step-2-incrementally-ingest-data-from-kafka-topic">Step 2: Incrementally ingest data from Kafka topic</h4>
+<p>Hudi comes with a tool named DeltaStreamer. This tool can connect to variety of data sources (including Kafka) to
+pull changes and apply to Hudi dataset using upsert/insert primitives. Here, we will use the tool to download
+json data from kafka topic and ingest to both COW and MOR tables we initialized in the previous step. This tool
+automatically initializes the datasets in the file-system if they do not exist yet.</p>
+<pre><code class="lang-Java">docker exec -it adhoc-2 /bin/bash
+
+# Run the following spark-submit command to execute the delta-streamer and ingest to stock_ticks_cow dataset in HDFS
+spark-submit --class org.apache.hudi.utilities.deltastreamer.HoodieDeltaStreamer $HUDI_UTILITIES_BUNDLE --storage-type COPY_ON_WRITE --source-class org.apache.hudi.utilities.sources.JsonKafkaSource --source-ordering-field ts  --target-base-path /user/hive/warehouse/stock_ticks_cow --target-table stock_ticks_cow --props /var/demo/config/kafka-source.properties --schemaprovider-class org.apache.hudi.utilities.schema.FilebasedSchemaProvider
+....
+....
+2018-09-24 22:20:00 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2018-09-24 22:20:00 INFO  SparkContext:54 - Successfully stopped SparkContext
+
+
+
+# Run the following spark-submit command to execute the delta-streamer and ingest to stock_ticks_mor dataset in HDFS
+spark-submit --class org.apache.hudi.utilities.deltastreamer.HoodieDeltaStreamer $HUDI_UTILITIES_BUNDLE --storage-type MERGE_ON_READ --source-class org.apache.hudi.utilities.sources.JsonKafkaSource --source-ordering-field ts  --target-base-path /user/hive/warehouse/stock_ticks_mor --target-table stock_ticks_mor --props /var/demo/config/kafka-source.properties --schemaprovider-class org.apache.hudi.utilities.schema.FilebasedSchemaProvider --disable-compaction
+....
+2018-09-24 22:22:01 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2018-09-24 22:22:01 INFO  SparkContext:54 - Successfully stopped SparkContext
+....
+
+# As part of the setup (Look at setup_demo.sh), the configs needed for DeltaStreamer is uploaded to HDFS. The configs
+# contain mostly Kafa connectivity settings, the avro-schema to be used for ingesting along with key and partitioning fields.
+
+exit
+</code></pre>
+<p>You can use HDFS web-browser to look at the datasets
+<code>http://namenode:50070/explorer.html#/user/hive/warehouse/stock_ticks_cow</code>.</p>
+<p>You can explore the new partition folder created in the dataset along with a &quot;deltacommit&quot;
+file under .hoodie which signals a successful commit.</p>
+<p>There will be a similar setup when you browse the MOR dataset
+<code>http://namenode:50070/explorer.html#/user/hive/warehouse/stock_ticks_mor</code></p>
+<h4 id="step-3-sync-with-hive">Step 3: Sync with Hive</h4>
+<p>At this step, the datasets are available in HDFS. We need to sync with Hive to create new Hive tables and add partitions
+inorder to run Hive queries against those datasets.</p>
+<pre><code class="lang-Java">docker exec -it adhoc-2 /bin/bash
+
+# THis command takes in HIveServer URL and COW Hudi Dataset location in HDFS and sync the HDFS state to Hive
+/var/hoodie/ws/hudi-hive/run_sync_tool.sh  --jdbc-url jdbc:hive2://hiveserver:10000 --user hive --pass hive --partitioned-by dt --base-path /user/hive/warehouse/stock_ticks_cow --database default --table stock_ticks_cow
+.....
+2018-09-24 22:22:45,568 INFO  [main] hive.HiveSyncTool (HiveSyncTool.java:syncHoodieTable(112)) - Sync complete for stock_ticks_cow
+.....
+
+# Now run hive-sync for the second data-set in HDFS using Merge-On-Read (MOR storage)
+/var/hoodie/ws/hudi-hive/run_sync_tool.sh  --jdbc-url jdbc:hive2://hiveserver:10000 --user hive --pass hive --partitioned-by dt --base-path /user/hive/warehouse/stock_ticks_mor --database default --table stock_ticks_mor
+...
+2018-09-24 22:23:09,171 INFO  [main] hive.HiveSyncTool (HiveSyncTool.java:syncHoodieTable(112)) - Sync complete for stock_ticks_mor
+...
+2018-09-24 22:23:09,559 INFO  [main] hive.HiveSyncTool (HiveSyncTool.java:syncHoodieTable(112)) - Sync complete for stock_ticks_mor_rt
+....
+exit
+</code></pre>
+<p>After executing the above command, you will notice</p>
+<ol>
+<li>A hive table named <code>stock_ticks_cow</code> created which provides Read-Optimized view for the Copy On Write dataset.</li>
+<li>Two new tables <code>stock_ticks_mor</code> and <code>stock_ticks_mor_rt</code> created for the Merge On Read dataset. The former
+provides the ReadOptimized view for the Hudi dataset and the later provides the realtime-view for the dataset.</li>
+</ol>
+<h4 id="step-4-a-run-hive-queries">Step 4 (a): Run Hive Queries</h4>
+<p>Run a hive query to find the latest timestamp ingested for stock symbol &apos;GOOG&apos;. You will notice that both read-optimized
+(for both COW and MOR dataset)and realtime views (for MOR dataset)give the same value &quot;10:29 a.m&quot; as Hudi create a
+parquet file for the first batch of data.</p>
+<pre><code class="lang-Java">docker exec -it adhoc-2 /bin/bash
+beeline -u jdbc:hive2://hiveserver:10000 --hiveconf hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat --hiveconf hive.stats.autogather=false
+# List Tables
+0: jdbc:hive2://hiveserver:10000&gt; show tables;
++---------------------+--+
+|      tab_name       |
++---------------------+--+
+| stock_ticks_cow     |
+| stock_ticks_mor     |
+| stock_ticks_mor_rt  |
++---------------------+--+
+2 rows selected (0.801 seconds)
+0: jdbc:hive2://hiveserver:10000&gt;
+
+
+# Look at partitions that were added
+0: jdbc:hive2://hiveserver:10000&gt; show partitions stock_ticks_mor_rt;
++----------------+--+
+|   partition    |
++----------------+--+
+| dt=2018-08-31  |
++----------------+--+
+1 row selected (0.24 seconds)
+
+
+# COPY-ON-WRITE Queries:
+=========================
+
+
+0: jdbc:hive2://hiveserver:10000&gt; select symbol, max(ts) from stock_ticks_cow group by symbol HAVING symbol = &apos;GOOG&apos;;
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:29:00  |
++---------+----------------------+--+
+
+Now, run a projection query:
+
+0: jdbc:hive2://hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_cow where  symbol = &apos;GOOG&apos;;
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924221953       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924221953       | GOOG    | 2018-08-31 10:29:00  | 3391    | 1230.1899  | 1230.085  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+
+# Merge-On-Read Queries:
+==========================
+
+Lets run similar queries against M-O-R dataset. Lets look at both
+ReadOptimized and Realtime views supported by M-O-R dataset
+
+# Run against ReadOptimized View. Notice that the latest timestamp is 10:29
+0: jdbc:hive2://hiveserver:10000&gt; select symbol, max(ts) from stock_ticks_mor group by symbol HAVING symbol = &apos;GOOG&apos;;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:29:00  |
++---------+----------------------+--+
+1 row selected (6.326 seconds)
+
+
+# Run against Realtime View. Notice that the latest timestamp is again 10:29
+
+0: jdbc:hive2://hiveserver:10000&gt; select symbol, max(ts) from stock_ticks_mor_rt group by symbol HAVING symbol = &apos;GOOG&apos;;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:29:00  |
++---------+----------------------+--+
+1 row selected (1.606 seconds)
+
+
+# Run projection query against Read Optimized and Realtime tables
+
+0: jdbc:hive2://hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor where  symbol = &apos;GOOG&apos;;
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924222155       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924222155       | GOOG    | 2018-08-31 10:29:00  | 3391    | 1230.1899  | 1230.085  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+0: jdbc:hive2://hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor_rt where  symbol = &apos;GOOG&apos;;
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924222155       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924222155       | GOOG    | 2018-08-31 10:29:00  | 3391    | 1230.1899  | 1230.085  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+exit
+exit
+</code></pre>
+<h4 id="step-4-b-run-spark-sql-queries">Step 4 (b): Run Spark-SQL Queries</h4>
+<p>Hudi support Spark as query processor just like Hive. Here are the same hive queries
+running in spark-sql</p>
+<pre><code class="lang-Java">docker exec -it adhoc-1 /bin/bash
+$SPARK_INSTALL/bin/spark-shell --jars $HUDI_SPARK_BUNDLE --master local[2] --driver-class-path $HADOOP_CONF_DIR --conf spark.sql.hive.convertMetastoreParquet=false --deploy-mode client  --driver-memory 1G --executor-memory 3G --num-executors 1  --packages com.databricks:spark-avro_2.11:4.0.0
+...
+
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  &apos;_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.3.1
+      /_/
+
+Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_181)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala&gt;
+scala&gt; spark.sql(&quot;show tables&quot;).show(100, false)
++--------+------------------+-----------+
+|database|tableName         |isTemporary|
++--------+------------------+-----------+
+|default |stock_ticks_cow   |false      |
+|default |stock_ticks_mor   |false      |
+|default |stock_ticks_mor_rt|false      |
++--------+------------------+-----------+
+
+# Copy-On-Write Table
+
+## Run max timestamp query against COW table
+
+scala&gt; spark.sql(&quot;select symbol, max(ts) from stock_ticks_cow group by symbol HAVING symbol = &apos;GOOG&apos;&quot;).show(100, false)
+[Stage 0:&gt;                                                          (0 + 1) / 1]SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
++------+-------------------+
+|symbol|max(ts)            |
++------+-------------------+
+|GOOG  |2018-08-31 10:29:00|
++------+-------------------+
+
+## Projection Query
+
+scala&gt; spark.sql(&quot;select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_cow where  symbol = &apos;GOOG&apos;&quot;).show(100, false)
++-------------------+------+-------------------+------+---------+--------+
+|_hoodie_commit_time|symbol|ts                 |volume|open     |close   |
++-------------------+------+-------------------+------+---------+--------+
+|20180924221953     |GOOG  |2018-08-31 09:59:00|6330  |1230.5   |1230.02 |
+|20180924221953     |GOOG  |2018-08-31 10:29:00|3391  |1230.1899|1230.085|
++-------------------+------+-------------------+------+---------+--------+
+
+# Merge-On-Read Queries:
+==========================
+
+Lets run similar queries against M-O-R dataset. Lets look at both
+ReadOptimized and Realtime views supported by M-O-R dataset
+
+# Run against ReadOptimized View. Notice that the latest timestamp is 10:29
+scala&gt; spark.sql(&quot;select symbol, max(ts) from stock_ticks_mor group by symbol HAVING symbol = &apos;GOOG&apos;&quot;).show(100, false)
++------+-------------------+
+|symbol|max(ts)            |
++------+-------------------+
+|GOOG  |2018-08-31 10:29:00|
++------+-------------------+
+
+
+# Run against Realtime View. Notice that the latest timestamp is again 10:29
+
+scala&gt; spark.sql(&quot;select symbol, max(ts) from stock_ticks_mor_rt group by symbol HAVING symbol = &apos;GOOG&apos;&quot;).show(100, false)
++------+-------------------+
+|symbol|max(ts)            |
++------+-------------------+
+|GOOG  |2018-08-31 10:29:00|
++------+-------------------+
+
+# Run projection query against Read Optimized and Realtime tables
+
+scala&gt; spark.sql(&quot;select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor where  symbol = &apos;GOOG&apos;&quot;).show(100, false)
++-------------------+------+-------------------+------+---------+--------+
+|_hoodie_commit_time|symbol|ts                 |volume|open     |close   |
++-------------------+------+-------------------+------+---------+--------+
+|20180924222155     |GOOG  |2018-08-31 09:59:00|6330  |1230.5   |1230.02 |
+|20180924222155     |GOOG  |2018-08-31 10:29:00|3391  |1230.1899|1230.085|
++-------------------+------+-------------------+------+---------+--------+
+
+scala&gt; spark.sql(&quot;select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor_rt where  symbol = &apos;GOOG&apos;&quot;).show(100, false)
++-------------------+------+-------------------+------+---------+--------+
+|_hoodie_commit_time|symbol|ts                 |volume|open     |close   |
++-------------------+------+-------------------+------+---------+--------+
+|20180924222155     |GOOG  |2018-08-31 09:59:00|6330  |1230.5   |1230.02 |
+|20180924222155     |GOOG  |2018-08-31 10:29:00|3391  |1230.1899|1230.085|
++-------------------+------+-------------------+------+---------+--------+
+</code></pre>
+<h4 id="step-5-upload-second-batch-to-kafka-and-run-deltastreamer-to-ingest">Step 5: Upload second batch to Kafka and run DeltaStreamer to ingest</h4>
+<p>Upload the second batch of data and ingest this batch using delta-streamer. As this batch does not bring in any new
+partitions, there is no need to run hive-sync</p>
+<pre><code class="lang-Java">cat docker/demo/data/batch_2.json | kafkacat -b kafkabroker -t stock_ticks -P
+
+# Within Docker container, run the ingestion command
+docker exec -it adhoc-2 /bin/bash
+
+# Run the following spark-submit command to execute the delta-streamer and ingest to stock_ticks_cow dataset in HDFS
+spark-submit --class org.apache.hudi.utilities.deltastreamer.HoodieDeltaStreamer $HUDI_UTILITIES_BUNDLE --storage-type COPY_ON_WRITE --source-class org.apache.hudi.utilities.sources.JsonKafkaSource --source-ordering-field ts  --target-base-path /user/hive/warehouse/stock_ticks_cow --target-table stock_ticks_cow --props /var/demo/config/kafka-source.properties --schemaprovider-class org.apache.hudi.utilities.schema.FilebasedSchemaProvider
+
+
+# Run the following spark-submit command to execute the delta-streamer and ingest to stock_ticks_mor dataset in HDFS
+spark-submit --class org.apache.hudi.utilities.deltastreamer.HoodieDeltaStreamer $HUDI_UTILITIES_BUNDLE --storage-type MERGE_ON_READ --source-class org.apache.hudi.utilities.sources.JsonKafkaSource --source-ordering-field ts  --target-base-path /user/hive/warehouse/stock_ticks_mor --target-table stock_ticks_mor --props /var/demo/config/kafka-source.properties --schemaprovider-class org.apache.hudi.utilities.schema.FilebasedSchemaProvider --disable-compaction
+
+exit
+</code></pre>
+<p>With Copy-On-Write table, the second ingestion by DeltaStreamer resulted in a new version of Parquet file getting created.
+See <code>http://namenode:50070/explorer.html#/user/hive/warehouse/stock_ticks_cow/2018/08/31</code></p>
+<p>With Merge-On-Read table, the second ingestion merely appended the batch to an unmerged delta (log) file.
+Take a look at the HDFS filesystem to get an idea: <code>http://namenode:50070/explorer.html#/user/hive/warehouse/stock_ticks_mor/2018/08/31</code></p>
+<h4 id="step-6a-run-hive-queries">Step 6(a): Run Hive Queries</h4>
+<p>With Copy-On-Write table, the read-optimized view immediately sees the changes as part of second batch once the batch
+got committed as each ingestion creates newer versions of parquet files.</p>
+<p>With Merge-On-Read table, the second ingestion merely appended the batch to an unmerged delta (log) file.
+This is the time, when ReadOptimized and Realtime views will provide different results. ReadOptimized view will still
+return &quot;10:29 am&quot; as it will only read from the Parquet file. Realtime View will do on-the-fly merge and return
+latest committed data which is &quot;10:59 a.m&quot;.</p>
+<pre><code class="lang-Java">docker exec -it adhoc-2 /bin/bash
+beeline -u jdbc:hive2://hiveserver:10000 --hiveconf hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat --hiveconf hive.stats.autogather=false
+
+# Copy On Write Table:
+
+0: jdbc:hive2://hiveserver:10000&gt; select symbol, max(ts) from stock_ticks_cow group by symbol HAVING symbol = &apos;GOOG&apos;;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:59:00  |
++---------+----------------------+--+
+1 row selected (1.932 seconds)
+
+0: jdbc:hive2://hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_cow where  symbol = &apos;GOOG&apos;;
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924221953       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924224524       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+As you can notice, the above queries now reflect the changes that came as part of ingesting second batch.
+
+
+# Merge On Read Table:
+
+# Read Optimized View
+0: jdbc:hive2://hiveserver:10000&gt; select symbol, max(ts) from stock_ticks_mor group by symbol HAVING symbol = &apos;GOOG&apos;;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:29:00  |
++---------+----------------------+--+
+1 row selected (1.6 seconds)
+
+0: jdbc:hive2://hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor where  symbol = &apos;GOOG&apos;;
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924222155       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924222155       | GOOG    | 2018-08-31 10:29:00  | 3391    | 1230.1899  | 1230.085  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+# Realtime View
+0: jdbc:hive2://hiveserver:10000&gt; select symbol, max(ts) from stock_ticks_mor_rt group by symbol HAVING symbol = &apos;GOOG&apos;;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:59:00  |
++---------+----------------------+--+
+
+0: jdbc:hive2://hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor_rt where  symbol = &apos;GOOG&apos;;
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924222155       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924224537       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+exit
+exit
+</code></pre>
+<h4 id="step-6b-run-spark-sql-queries">Step 6(b): Run Spark SQL Queries</h4>
+<p>Running the same queries in Spark-SQL:</p>
+<pre><code class="lang-Java">docker exec -it adhoc-1 /bin/bash
+bash-4.4# $SPARK_INSTALL/bin/spark-shell --jars $HUDI_SPARK_BUNDLE --driver-class-path $HADOOP_CONF_DIR --conf spark.sql.hive.convertMetastoreParquet=false --deploy-mode client  --driver-memory 1G --master local[2] --executor-memory 3G --num-executors 1  --packages com.databricks:spark-avro_2.11:4.0.0
+
+# Copy On Write Table:
+
+scala&gt; spark.sql(&quot;select symbol, max(ts) from stock_ticks_cow group by symbol HAVING symbol = &apos;GOOG&apos;&quot;).show(100, false)
++------+-------------------+
+|symbol|max(ts)            |
++------+-------------------+
+|GOOG  |2018-08-31 10:59:00|
++------+-------------------+
+
+scala&gt; spark.sql(&quot;select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_cow where  symbol = &apos;GOOG&apos;&quot;).show(100, false)
+
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924221953       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924224524       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+As you can notice, the above queries now reflect the changes that came as part of ingesting second batch.
+
+
+# Merge On Read Table:
+
+# Read Optimized View
+scala&gt; spark.sql(&quot;select symbol, max(ts) from stock_ticks_mor group by symbol HAVING symbol = &apos;GOOG&apos;&quot;).show(100, false)
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:29:00  |
++---------+----------------------+--+
+1 row selected (1.6 seconds)
+
+scala&gt; spark.sql(&quot;select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor where  symbol = &apos;GOOG&apos;&quot;).show(100, false)
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924222155       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924222155       | GOOG    | 2018-08-31 10:29:00  | 3391    | 1230.1899  | 1230.085  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+# Realtime View
+scala&gt; spark.sql(&quot;select symbol, max(ts) from stock_ticks_mor_rt group by symbol HAVING symbol = &apos;GOOG&apos;&quot;).show(100, false)
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:59:00  |
++---------+----------------------+--+
+
+scala&gt; spark.sql(&quot;select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor_rt where  symbol = &apos;GOOG&apos;&quot;).show(100, false)
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924222155       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924224537       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+exit
+exit
+</code></pre>
+<h4 id="step-7--incremental-query-for-copy-on-write-table">Step 7 : Incremental Query for COPY-ON-WRITE Table</h4>
+<p>With 2 batches of data ingested, lets showcase the support for incremental queries in Hudi Copy-On-Write datasets</p>
+<p>Lets take the same projection query example</p>
+<pre><code class="lang-Java">docker exec -it adhoc-<span class="hljs-number">2</span> /bin/bash
+beeline -u jdbc:hive2:<span class="hljs-comment">//hiveserver:10000 --hiveconf hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat --hiveconf hive.stats.autogather=false</span>
+
+<span class="hljs-number">0</span>: jdbc:hive2:<span class="hljs-comment">//hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_cow where  symbol = &apos;GOOG&apos;;</span>
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| <span class="hljs-number">20180924064621</span>       | GOOG    | <span class="hljs-number">2018</span>-<span class="hljs-number">08</span>-<span class="hljs-number">31</span> <span class="hljs-number">09</span>:<span class="hljs-number">59</span>:<span class="hljs-number">00</span>  | <span class="hljs-number">6330</span>    | <span class="hljs-number">1230.5</span>     | <span class="hljs-number">1230.02</span>   |
+| <span class="hljs-number">20180924065039</span>       | GOOG    | <span class="hljs-number">2018</span>-<span class="hljs-number">08</span>-<span class="hljs-number">31</span> <span class="hljs-number">10</span>:<span class="hljs-number">59</span>:<span class="hljs-number">00</span>  | <span class="hljs-number">9021</span>    | <span class="hljs-number">1227.1993</span>  | <span class="hljs-number">1227.215</span>  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+</code></pre>
+<p>As you notice from the above queries, there are 2 commits - 20180924064621 and 20180924065039 in timeline order.
+When you follow the steps, you will be getting different timestamps for commits. Substitute them
+in place of the above timestamps.</p>
+<p>To show the effects of incremental-query, let us assume that a reader has already seen the changes as part of
+ingesting first batch. Now, for the reader to see effect of the second batch, he/she has to keep the start timestamp to
+the commit time of the first batch (20180924064621) and run incremental query</p>
+<p>Hudi incremental mode provides efficient scanning for incremental queries by filtering out files that do not have any
+candidate rows using hudi-managed metadata.</p>
+<pre><code class="lang-Java">docker exec -it adhoc-<span class="hljs-number">2</span> /bin/bash
+beeline -u jdbc:hive2:<span class="hljs-comment">//hiveserver:10000 --hiveconf hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat --hiveconf hive.stats.autogather=false</span>
+<span class="hljs-number">0</span>: jdbc:hive2:<span class="hljs-comment">//hiveserver:10000&gt; set hoodie.stock_ticks_cow.consume.mode=INCREMENTAL;</span>
+<span class="hljs-function">No rows <span class="hljs-title">affected</span> <span class="hljs-params">(<span class="hljs-number">0.009</span> seconds)</span>
+0: jdbc:hive2:<span class="hljs-comment">//hiveserver:10000&gt;  set hoodie.stock_ticks_cow.consume.max.commits=3;</span>
+No rows <span class="hljs-title">affected</span> <span class="hljs-params">(<span class="hljs-number">0.009</span> seconds)</span>
+0: jdbc:hive2:<span class="hljs-comment">//hiveserver:10000&gt; set hoodie.stock_ticks_cow.consume.start.timestamp=20180924064621;</span>
+</span></code></pre>
+<p>With the above setting, file-ids that do not have any updates from the commit 20180924065039 is filtered out without scanning.
+Here is the incremental query :</p>
+<pre><code class="lang-Java"><span class="hljs-number">0</span>: jdbc:hive2:<span class="hljs-comment">//hiveserver:10000&gt;</span>
+<span class="hljs-number">0</span>: jdbc:hive2:<span class="hljs-comment">//hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_cow where  symbol = &apos;GOOG&apos; and `_hoodie_commit_time` &gt; &apos;20180924064621&apos;;</span>
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| <span class="hljs-number">20180924065039</span>       | GOOG    | <span class="hljs-number">2018</span>-<span class="hljs-number">08</span>-<span class="hljs-number">31</span> <span class="hljs-number">10</span>:<span class="hljs-number">59</span>:<span class="hljs-number">00</span>  | <span class="hljs-number">9021</span>    | <span class="hljs-number">1227.1993</span>  | <span class="hljs-number">1227.215</span>  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+<span class="hljs-number">1</span> <span class="hljs-function">row <span class="hljs-title">selected</span> <span class="hljs-params">(<span class="hljs-number">0.83</span> seconds)</span>
+0: jdbc:hive2:<span class="hljs-comment">//hiveserver:10000&gt;</span>
+</span></code></pre>
+<h5 id="incremental-query-with-spark-sql">Incremental Query with Spark SQL:</h5>
+<pre><code class="lang-Java">docker exec -it adhoc-1 /bin/bash
+bash-4.4# $SPARK_INSTALL/bin/spark-shell --jars $HUDI_SPARK_BUNDLE --driver-class-path $HADOOP_CONF_DIR --conf spark.sql.hive.convertMetastoreParquet=false --deploy-mode client  --driver-memory 1G --master local[2] --executor-memory 3G --num-executors 1  --packages com.databricks:spark-avro_2.11:4.0.0
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  &apos;_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.3.1
+      /_/
+
+Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_181)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala&gt; import org.apache.hudi.DataSourceReadOptions
+import org.apache.hudi.DataSourceReadOptions
+
+# In the below query, 20180925045257 is the first commit&apos;s timestamp
+scala&gt; val hoodieIncViewDF =  spark.read.format(&quot;org.apache.hudi&quot;).option(DataSourceReadOptions.VIEW_TYPE_OPT_KEY, DataSourceReadOptions.VIEW_TYPE_INCREMENTAL_OPT_VAL).option(DataSourceReadOptions.BEGIN_INSTANTTIME_OPT_KEY, &quot;20180924064621&quot;).load(&quot;/user/hive/warehouse/stock_ticks_cow&quot;)
+SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+hoodieIncViewDF: org.apache.spark.sql.DataFrame = [_hoodie_commit_time: string, _hoodie_commit_seqno: string ... 15 more fields]
+
+scala&gt; hoodieIncViewDF.registerTempTable(&quot;stock_ticks_cow_incr_tmp1&quot;)
+warning: there was one deprecation warning; re-run with -deprecation for details
+
+scala&gt; spark.sql(&quot;select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_cow_incr_tmp1 where  symbol = &apos;GOOG&apos;&quot;).show(100, false);
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924065039       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+</code></pre>
+<h4 id="step-8-schedule-and-run-compaction-for-merge-on-read-dataset">Step 8: Schedule and Run Compaction for Merge-On-Read dataset</h4>
+<p>Lets schedule and run a compaction to create a new version of columnar  file so that read-optimized readers will see fresher data.
+Again, You can use Hudi CLI to manually schedule and run compaction</p>
+<pre><code class="lang-Java">docker exec -it adhoc-1 /bin/bash
+root@adhoc-1:/opt#   /var/hoodie/ws/hudi-cli/hudi-cli.sh
+============================================
+*                                          *
+*     _    _           _   _               *
+*    | |  | |         | | (_)              *
+*    | |__| |       __| |  -               *
+*    |  __  ||   | / _` | ||               *
+*    | |  | ||   || (_| | ||               *
+*    |_|  |_|\___/ \____/ ||               *
+*                                          *
+============================================
+
+Welcome to Hoodie CLI. Please type help if you are looking for help.
+hudi-&gt;connect --path /user/hive/warehouse/stock_ticks_mor
+18/09/24 06:59:34 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/09/24 06:59:35 INFO table.HoodieTableMetaClient: Loading HoodieTableMetaClient from /user/hive/warehouse/stock_ticks_mor
+18/09/24 06:59:35 INFO util.FSUtils: Hadoop Configuration: fs.defaultFS: [hdfs://namenode:8020], Config:[Configuration: core-default.xml, core-site.xml, mapred-default.xml, mapred-site.xml, yarn-default.xml, yarn-site.xml, hdfs-default.xml, hdfs-site.xml], FileSystem: [DFS[DFSClient[clientName=DFSClient_NONMAPREDUCE_-1261652683_11, ugi=root (auth:SIMPLE)]]]
+18/09/24 06:59:35 INFO table.HoodieTableConfig: Loading dataset properties from /user/hive/warehouse/stock_ticks_mor/.hoodie/hoodie.properties
+18/09/24 06:59:36 INFO table.HoodieTableMetaClient: Finished Loading Table of type MERGE_ON_READ from /user/hive/warehouse/stock_ticks_mor
+Metadata for table stock_ticks_mor loaded
+
+# Ensure no compactions are present
+
+hoodie:stock_ticks_mor-&gt;compactions show all
+18/09/24 06:59:54 INFO timeline.HoodieActiveTimeline: Loaded instants [[20180924064636__clean__COMPLETED], [20180924064636__deltacommit__COMPLETED], [20180924065057__clean__COMPLETED], [20180924065057__deltacommit__COMPLETED]]
+    ___________________________________________________________________
+    | Compaction Instant Time| State    | Total FileIds to be Compacted|
+    |==================================================================|
+
+
+
+
+# Schedule a compaction. This will use Spark Launcher to schedule compaction
+hoodie:stock_ticks_mor-&gt;compaction schedule
+....
+Compaction successfully completed for 20180924070031
+
+# Now refresh and check again. You will see that there is a new compaction requested
+
+hoodie:stock_ticks-&gt;connect --path /user/hive/warehouse/stock_ticks_mor
+18/09/24 07:01:16 INFO table.HoodieTableMetaClient: Loading HoodieTableMetaClient from /user/hive/warehouse/stock_ticks_mor
+18/09/24 07:01:16 INFO util.FSUtils: Hadoop Configuration: fs.defaultFS: [hdfs://namenode:8020], Config:[Configuration: core-default.xml, core-site.xml, mapred-default.xml, mapred-site.xml, yarn-default.xml, yarn-site.xml, hdfs-default.xml, hdfs-site.xml], FileSystem: [DFS[DFSClient[clientName=DFSClient_NONMAPREDUCE_-1261652683_11, ugi=root (auth:SIMPLE)]]]
+18/09/24 07:01:16 INFO table.HoodieTableConfig: Loading dataset properties from /user/hive/warehouse/stock_ticks_mor/.hoodie/hoodie.properties
+18/09/24 07:01:16 INFO table.HoodieTableMetaClient: Finished Loading Table of type MERGE_ON_READ from /user/hive/warehouse/stock_ticks_mor
+Metadata for table stock_ticks_mor loaded
+
+
+
+hoodie:stock_ticks_mor-&gt;compactions show all
+18/09/24 06:34:12 INFO timeline.HoodieActiveTimeline: Loaded instants [[20180924041125__clean__COMPLETED], [20180924041125__deltacommit__COMPLETED], [20180924042735__clean__COMPLETED], [20180924042735__deltacommit__COMPLETED], [==&gt;20180924063245__compaction__REQUESTED]]
+    ___________________________________________________________________
+    | Compaction Instant Time| State    | Total FileIds to be Compacted|
+    |==================================================================|
+    | 20180924070031         | REQUESTED| 1                            |
+
+
+
+
+# Execute the compaction. The compaction instant value passed below must be the one displayed in the above &quot;compactions show all&quot; query
+hoodie:stock_ticks_mor-&gt;compaction run --compactionInstant  20180924070031 --parallelism 2 --sparkMemory 1G  --schemaFilePath /var/demo/config/schema.avsc --retry 1  
+....
+Compaction successfully completed for 20180924070031
+
+
+## Now check if compaction is completed
+
+hoodie:stock_ticks_mor-&gt;connect --path /user/hive/warehouse/stock_ticks_mor
+18/09/24 07:03:00 INFO table.HoodieTableMetaClient: Loading HoodieTableMetaClient from /user/hive/warehouse/stock_ticks_mor
+18/09/24 07:03:00 INFO util.FSUtils: Hadoop Configuration: fs.defaultFS: [hdfs://namenode:8020], Config:[Configuration: core-default.xml, core-site.xml, mapred-default.xml, mapred-site.xml, yarn-default.xml, yarn-site.xml, hdfs-default.xml, hdfs-site.xml], FileSystem: [DFS[DFSClient[clientName=DFSClient_NONMAPREDUCE_-1261652683_11, ugi=root (auth:SIMPLE)]]]
+18/09/24 07:03:00 INFO table.HoodieTableConfig: Loading dataset properties from /user/hive/warehouse/stock_ticks_mor/.hoodie/hoodie.properties
+18/09/24 07:03:00 INFO table.HoodieTableMetaClient: Finished Loading Table of type MERGE_ON_READ from /user/hive/warehouse/stock_ticks_mor
+Metadata for table stock_ticks_mor loaded
+
+
+
+hoodie:stock_ticks-&gt;compactions show all
+18/09/24 07:03:15 INFO timeline.HoodieActiveTimeline: Loaded instants [[20180924064636__clean__COMPLETED], [20180924064636__deltacommit__COMPLETED], [20180924065057__clean__COMPLETED], [20180924065057__deltacommit__COMPLETED], [20180924070031__commit__COMPLETED]]
+    ___________________________________________________________________
+    | Compaction Instant Time| State    | Total FileIds to be Compacted|
+    |==================================================================|
+    | 20180924070031         | COMPLETED| 1                            |
+</code></pre>
+<h4 id="step-9-run-hive-queries-including-incremental-queries">Step 9: Run Hive Queries including incremental queries</h4>
+<p>You will see that both ReadOptimized and Realtime Views will show the latest committed data.
+Lets also run the incremental query for MOR table.
+From looking at the below query output, it will be clear that the fist commit time for the MOR table is 20180924064636
+and the second commit time is 20180924070031</p>
+<pre><code class="lang-Java">docker exec -it adhoc-2 /bin/bash
+beeline -u jdbc:hive2://hiveserver:10000 --hiveconf hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat --hiveconf hive.stats.autogather=false
+
+# Read Optimized View
+0: jdbc:hive2://hiveserver:10000&gt; select symbol, max(ts) from stock_ticks_mor group by symbol HAVING symbol = &apos;GOOG&apos;;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:59:00  |
++---------+----------------------+--+
+1 row selected (1.6 seconds)
+
+0: jdbc:hive2://hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor where  symbol = &apos;GOOG&apos;;
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924064636       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924070031       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+# Realtime View
+0: jdbc:hive2://hiveserver:10000&gt; select symbol, max(ts) from stock_ticks_mor_rt group by symbol HAVING symbol = &apos;GOOG&apos;;
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:59:00  |
++---------+----------------------+--+
+
+0: jdbc:hive2://hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor_rt where  symbol = &apos;GOOG&apos;;
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924064636       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924070031       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+# Incremental View:
+
+0: jdbc:hive2://hiveserver:10000&gt; set hoodie.stock_ticks_mor.consume.mode=INCREMENTAL;
+No rows affected (0.008 seconds)
+# Max-Commits covers both second batch and compaction commit
+0: jdbc:hive2://hiveserver:10000&gt; set hoodie.stock_ticks_mor.consume.max.commits=3;
+No rows affected (0.007 seconds)
+0: jdbc:hive2://hiveserver:10000&gt; set hoodie.stock_ticks_mor.consume.start.timestamp=20180924064636;
+No rows affected (0.013 seconds)
+# Query:
+0: jdbc:hive2://hiveserver:10000&gt; select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor where  symbol = &apos;GOOG&apos; and `_hoodie_commit_time` &gt; &apos;20180924064636&apos;;
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924070031       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+exit
+exit
+</code></pre>
+<h5 id="read-optimized-and-realtime-views-for-mor-with-spark-sql-after-compaction">Read Optimized and Realtime Views for MOR with Spark-SQL after compaction</h5>
+<pre><code class="lang-Java">docker exec -it adhoc-1 /bin/bash
+bash-4.4# $SPARK_INSTALL/bin/spark-shell --jars $HUDI_SPARK_BUNDLE --driver-class-path $HADOOP_CONF_DIR --conf spark.sql.hive.convertMetastoreParquet=false --deploy-mode client  --driver-memory 1G --master local[2] --executor-memory 3G --num-executors 1  --packages com.databricks:spark-avro_2.11:4.0.0
+
+# Read Optimized View
+scala&gt; spark.sql(&quot;select symbol, max(ts) from stock_ticks_mor group by symbol HAVING symbol = &apos;GOOG&apos;&quot;).show(100, false)
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:59:00  |
++---------+----------------------+--+
+1 row selected (1.6 seconds)
+
+scala&gt; spark.sql(&quot;select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor where  symbol = &apos;GOOG&apos;&quot;).show(100, false)
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924064636       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924070031       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+
+# Realtime View
+scala&gt; spark.sql(&quot;select symbol, max(ts) from stock_ticks_mor_rt group by symbol HAVING symbol = &apos;GOOG&apos;&quot;).show(100, false)
++---------+----------------------+--+
+| symbol  |         _c1          |
++---------+----------------------+--+
+| GOOG    | 2018-08-31 10:59:00  |
++---------+----------------------+--+
+
+scala&gt; spark.sql(&quot;select `_hoodie_commit_time`, symbol, ts, volume, open, close  from stock_ticks_mor_rt where  symbol = &apos;GOOG&apos;&quot;).show(100, false)
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| _hoodie_commit_time  | symbol  |          ts          | volume  |    open    |   close   |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+| 20180924064636       | GOOG    | 2018-08-31 09:59:00  | 6330    | 1230.5     | 1230.02   |
+| 20180924070031       | GOOG    | 2018-08-31 10:59:00  | 9021    | 1227.1993  | 1227.215  |
++----------------------+---------+----------------------+---------+------------+-----------+--+
+</code></pre>
+<p>This brings the demo to an end.</p>
+<h2 id="testing-hudi-in-local-docker-environment">Testing Hudi in Local Docker environment</h2>
+<p>You can bring up a hadoop docker environment containing Hadoop, Hive and Spark services with support for hudi.</p>
+<pre><code class="lang-Java">$ mvn pre-integration-test -DskipTests
+</code></pre>
+<p>The above command builds docker images for all the services with
+current Hudi source installed at /var/hoodie/ws and also brings up the services using a compose file. We
+currently use Hadoop (v2.8.4), Hive (v2.3.3) and Spark (v2.3.1) in docker images.</p>
+<p>To bring down the containers</p>
+<pre><code class="lang-Java">$ cd hudi-integ-test
+$ mvn docker-compose:down
+</code></pre>
+<p>If you want to bring up the docker containers, use</p>
+<pre><code class="lang-Java">$ cd hudi-integ-test
+$  mvn docker-compose:up -DdetachedMode=<span class="hljs-keyword">true</span>
+</code></pre>
+<p>Hudi is a library that is operated in a broader data analytics/ingestion environment
+involving Hadoop, Hive and Spark. Interoperability with all these systems is a key objective for us. We are
+actively adding integration-tests under <strong>hudi-integ-test/src/test/java</strong> that makes use of this
+docker environment (See <strong>hudi-integ-test/src/test/java/org/apache/hudi/integ/ITTestHoodieSanity.java</strong> )</p>
+<h4 id="building-local-docker-containers">Building Local Docker Containers:</h4>
+<p>The docker images required for demo and running integration test are already in docker-hub. The docker images
+and compose scripts are carefully implemented so that they serve dual-purpose</p>
+<ol>
+<li>The docker images have inbuilt hudi jar files with environment variable pointing to those jars (HUDI_HADOOP_BUNDLE, ...)</li>
+<li>For running integration-tests, we need the jars generated locally to be used for running services within docker. The
+docker-compose scripts (see <code>docker/compose/docker-compose_hadoop284_hive233_spark231.yml</code>) ensures local jars override
+inbuilt jars by mounting local HUDI workspace over the docker location</li>
+</ol>
+<p>This helps avoid maintaining separate docker images and avoids the costly step of building HUDI docker images locally.
+But if users want to test hudi from locations with lower network bandwidth, they can still build local images
+run the script
+<code>docker/build_local_docker_images.sh</code> to build local docker images before running <code>docker/setup_demo.sh</code></p>
+<p>Here are the commands:</p>
+<pre><code class="lang-Java">cd docker
+./build_local_docker_images.sh
+.....
+
+[INFO] Reactor Summary:
+[INFO]
+[INFO] hoodie ............................................. SUCCESS [  <span class="hljs-number">1.709</span> s]
+[INFO] hudi-common ...................................... SUCCESS [  <span class="hljs-number">9.015</span> s]
+[INFO] hudi-hadoop-mr ................................... SUCCESS [  <span class="hljs-number">1.108</span> s]
+[INFO] hudi-client ...................................... SUCCESS [  <span class="hljs-number">4.409</span> s]
+[INFO] hudi-hive ........................................ SUCCESS [  <span class="hljs-number">0.976</span> s]
+[INFO] hudi-spark ....................................... SUCCESS [ <span class="hljs-number">26.522</span> s]
+[INFO] hudi-utilities ................................... SUCCESS [ <span class="hljs-number">16.256</span> s]
+[INFO] hudi-cli ......................................... SUCCESS [ <span class="hljs-number">11.341</span> s]
+[INFO] hudi-hadoop-mr-bundle ............................ SUCCESS [  <span class="hljs-number">1.893</span> s]
+[INFO] hudi-hive-bundle ................................. SUCCESS [ <span class="hljs-number">14.099</span> s]
+[INFO] hudi-spark-bundle ................................ SUCCESS [ <span class="hljs-number">58.252</span> s]
+[INFO] hudi-hadoop-docker ............................... SUCCESS [  <span class="hljs-number">0.612</span> s]
+[INFO] hudi-hadoop-base-docker .......................... SUCCESS [<span class="hljs-number">04</span>:<span class="hljs-number">04</span> min]
+[INFO] hudi-hadoop-namenode-docker ...................... SUCCESS [  <span class="hljs-number">6.142</span> s]
+[INFO] hudi-hadoop-datanode-docker ...................... SUCCESS [  <span class="hljs-number">7.763</span> s]
+[INFO] hudi-hadoop-history-docker ....................... SUCCESS [  <span class="hljs-number">5.922</span> s]
+[INFO] hudi-hadoop-hive-docker .......................... SUCCESS [ <span class="hljs-number">56.152</span> s]
+[INFO] hudi-hadoop-sparkbase-docker ..................... SUCCESS [<span class="hljs-number">01</span>:<span class="hljs-number">18</span> min]
+[INFO] hudi-hadoop-sparkmaster-docker ................... SUCCESS [  <span class="hljs-number">2.964</span> s]
+[INFO] hudi-hadoop-sparkworker-docker ................... SUCCESS [  <span class="hljs-number">3.032</span> s]
+[INFO] hudi-hadoop-sparkadhoc-docker .................... SUCCESS [  <span class="hljs-number">2.764</span> s]
+[INFO] hudi-integ-test .................................. SUCCESS [  <span class="hljs-number">1.785</span> s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: <span class="hljs-number">09</span>:<span class="hljs-number">15</span> min
+[INFO] Finished at: <span class="hljs-number">2018</span>-<span class="hljs-number">09</span>-<span class="hljs-number">10</span>T17:<span class="hljs-number">47</span>:<span class="hljs-number">37</span>-<span class="hljs-number">07</span>:<span class="hljs-number">00</span>
+[INFO] Final Memory: <span class="hljs-number">236</span>M/<span class="hljs-number">1848</span>M
+[INFO] ------------------------------------------------------------------------
+</code></pre>
+<p><hr></p>
+<div align="center">
+    <p><a href="http://www.apachecn.org" target="_blank"><font face="KaiTi" size="6" color="red">&#x6211;&#x4EEC;&#x4E00;&#x76F4;&#x5728;&#x52AA;&#x529B;</font></a></p>
+    <p><a href="https://github.com/apachecn/hudi-doc-zh/" target="_blank">apachecn/hudi-doc-zh</a></p>
+    <p><iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&amp;repo=hudi-doc-zh&amp;type=watch&amp;count=true&amp;v=2" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+    <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&amp;repo=hudi-doc-zh&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+    <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&amp;repo=hudi-doc-zh&amp;type=fork&amp;count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+    <a target="_blank" href="shang.qq.com/wpa/qunwpa"><img border="0" src="http://data.apachecn.org/img/logo/ApacheCN-group.png" alt="ML | ApacheCN" title="ML | ApacheCN"></a></p>
+</div>
+ <div style="text-align:center;margin:0 0 10.5px;">
+     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-3565452474788507" data-ad-slot="2543897000">
+     </ins>
+     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?2574ec73e5e1748bda66f689cac02272";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102475051-10"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-102475051-13');
+    </script>
+</div>
+
+<p><meta name="google-site-verification" content="pyo9N70ZWyh8JB43bIu633mhxesJ1IcwWCZlM3jUfFo"></p>
+<p><iframe src="https://www.bilibili.com/read/cv2710377" style="display:none"></iframe>
+<img src="http://t.cn/AiCoDHwb" hidden="hidden"></p>
+<div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        const gitalk = new Gitalk({
+        clientID: '0c7afcd52f7c96b1c230',
+        clientSecret: '88920ce6e8b31a24a61c3762b9947337b21a7806',
+        repo: 'hudi-doc-zh',
+        owner: 'apachecn',
+        admin: ['jiangzhonglian', 'wizardforcel'],
+        id: md5(location.pathname),
+        distractionFreeMode: false
+        })
+        gitalk.render('gitalk-container')
+    </script>
+</div>
+
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; ibooker.org.cn 2019 all right reserved&#xFF0C;&#x7531; ApacheCN &#x56E2;&#x961F;&#x63D0;&#x4F9B;&#x652F;&#x6301;</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A; 
+2020-01-09 14:15:24
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="comparison.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 对比">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Docker 示例","keywords":"hudi, docker, demo","sidebar":"mydoc_sidebar","toc":true,"permalink":"docker_demo.html","level":"1.2.5","depth":2,"next":{"title":"文档","level":"1.3","depth":1,"ref":"","articles":[{"title":"概念","level":"1.3.1","depth":2,"path":"concepts.md","ref":"concepts.md","articles":[]},{"title":"写入数据","level":"1.3.2","depth":2,"path":"writing_data.md","ref":"writing_data.md","articles":[]},{"title":"查询数据","level":"1.3.3","depth":2,"path":"querying_data.md","ref":"querying_data.md","articles":[]},{"title":"配置","level":"1.3.4","depth":2,"path":"configurations.md","ref":"configurations.md","articles":[]},{"title":"性能","level":"1.3.5","depth":2,"path":"performance.md","ref":"performance.md","articles":[]},{"title":"管理","level":"1.3.6","depth":2,"path":"admin_guide.md","ref":"admin_guide.md","articles":[]}]},"previous":{"title":"对比","level":"1.2.4","depth":2,"path":"comparison.md","ref":"comparison.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","github-buttons","-sharing","insert-logo","sharing-plus","back-to-top-button","code","copy-code-button","mathjax","pageview-count","edit-link","emphasize","alerts","auto-scroll-table","popup","hide-element","page-toc-button","tbfed-pagefooter","sitemap","advanced-emoji","expandable-chapters","splitter","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ibooker.org.cn 2019","modify_label":"该文件修订时间： ","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"github":{"url":"https://github.com/apachecn/hudi-doc-zh"},"splitter":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://hudi.apachecn.org"},"page-toc-button":{"maxTocDepth":4,"minTocSize":4},"back-to-top-button":{},"pageview-count":{},"alerts":{},"github-buttons":{"buttons":[{"user":"apachecn","repo":"hudi-doc-zh","type":"star","count":true,"size":"small"}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["qq","douban","facebook","google","linkedin","twitter","weibo","whatsapp"],"douban":false,"facebook":false,"weibo":true,"whatsapp":false,"twitter":false,"line":false,"google":false,"qzone":true},"edit-link":{"label":"编辑本页","base":"https://github.com/apachecn/hudi-doc-zh/blob/master/docs/0.5.0"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 150px; min-height: 150px","url":"https://hudi.apache.org/assets/images/logo-big.png"},"expandable-chapters":{}},"my_links":{"sidebar":{"Home":"https://www.baidu.com"}},"theme":"default","author":"ApacheCN","my_plugins":["donate","todo","-lunr","-search","expandable-chapters-small","chapter-fold","expandable-chapters","expandable-chapters-small","back-to-top-button","ga","baidu","sitemap","tbfed-pagefooter","advanced-emoji","sectionx","page-treeview","simple-page-toc","ancre-navigation","theme-apachecn@git+https://github.com/apachecn/theme-apachecn#HEAD","pagefooter-apachecn@git+https://github.com/apachecn/gitbook-plugin-pagefooter-apachecn#HEAD"],"my_pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"ignores":["node_modules"],"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"page-copyright":{"wisdom":"Designer, Frontend Developer & overall web enthusiast","noPowered":false,"copyright":"Copyright &#169; 你的名字","style":"normal","timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"你的签名","copyrightColor":"#666","description":"modified at"},"donate":{"wechat":"微信收款的二维码URL","alipay":"支付宝收款的二维码URL","title":"","button":"赏","alipayText":"支付宝打赏","wechatText":"微信打赏"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"github-buttons":{"buttons":[{"user":"apachecn","repo":"hudi-doc-zh","type":"star","count":true,"size":"small"},{"user":"apachecn","width":"160","type":"follow","count":true,"size":"small"}]},"ga":{"token":"UA-102475051-13"},"baidu":{"token":"2574ec73e5e1748bda66f689cac02272"},"pagefooter-apachecn":{"copyright":"Copyright &copy ibooker.org.cn 2019","modify_label":"该文件修订时间： ","modify_format":"YYYY-MM-DD HH:mm:ss"}},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Hudi 中文文档","language":"zh-hans","gitbook":"*","description":"Hudi 中文文档: 教程和文档"},"file":{"path":"docker_demo.md","mtime":"2020-01-09T14:15:24.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-09T14:16:20.516Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
