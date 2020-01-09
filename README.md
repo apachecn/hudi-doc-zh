@@ -15,7 +15,7 @@
 
 > 欢迎任何人参与和完善：一个人可以走的很快，但是一群人却可以走的更远。
 
-+ [Hubi Master版本](http://hudi.apachecn.org)
++ [Hudi Master版本](http://hudi.apachecn.org)
 + [ApacheCN 其他的学习资源](http://www.apachecn.org)
 
 > hudi 官方入口
