@@ -44,7 +44,7 @@
             ]
         },
         "insert-logo": {
-            "url": "http://data.apachecn.org/img/logo.jpg",
+            "url": "https://hudi.apache.org/assets/images/logo-big.png",
             "style": "background: none; max-height: 150px; min-height: 150px"
         },
         "hide-element": {
