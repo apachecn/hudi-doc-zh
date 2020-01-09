@@ -14,7 +14,7 @@ gitbook build ./ _book
 # versions=("0.5.0" "0.4.0" "master" "0.6.0")
 versions=("0.5.0" "master")
 # 获取最新版本 ${versions[0]} 生存master
-rm -rf docs/master/*
+mkdir docs/master
 cp -r docs/${versions[0]}/* docs/master
 
 # for循环遍历
@@ -46,6 +46,13 @@ do
     echo "gitbook build docs/${version} _book/docs/${version}"
     gitbook build docs/${version} _book/docs/${version}
 done
+
+mkdir books
+gitbook epub . books/hudi-doc-zh.epub
+gitbook mobi . books/hudi-doc-zh.mobi
+mv books _book
+# 编译完成后就直接删除
+rm -rf docs/master
 
 # rm -rf /opt/apache-tomcat-9.0.17/webapps/test_book
 # cp -r _book /opt/apache-tomcat-9.0.17/webapps/test_book

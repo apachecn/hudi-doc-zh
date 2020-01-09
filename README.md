@@ -17,6 +17,7 @@
 
 + [Hudi Master版本](http://hudi.apachecn.org)
 + [ApacheCN 其他的学习资源](http://www.apachecn.org)
+* 电子书下载地址：[epub](https://github.com/apachecn/hudi-doc-zh/tree/gh-pages/books/hudi-doc-zh.epub), [mobi](https://github.com/apachecn/hudi-doc-zh/tree/gh-pages/books/hudi-doc-zh.mobi)
 
 > hudi 官方入口
 
