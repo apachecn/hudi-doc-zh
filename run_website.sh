@@ -14,7 +14,7 @@ gitbook build ./ _book
 # versions=("0.5.0" "0.4.0" "master" "0.6.0")
 versions=("0.5.0" "master")
 # 获取最新版本 ${versions[0]} 生存master
-mkdir docs/master
+rm -rf docs/master/*
 cp -r docs/${versions[0]}/* docs/master
 
 # for循环遍历
